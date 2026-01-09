@@ -180,12 +180,6 @@
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-        .main-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            margin-bottom: 30px;
-        }
         .card {
             background: white;
             padding: 30px;
@@ -309,96 +303,6 @@
         .all-barberos-btn.active {
             background: #666;
         }
-        .form-group textarea {
-            width: 100%;
-            padding: 12px;
-            border: 2px solid #e0e0e0;
-            border-radius: 8px;
-            font-family: inherit;
-            font-size: 0.95em;
-            resize: vertical;
-            transition: border-color 0.3s ease;
-        }
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #1a1a1a;
-        }
-        .form-group input[type="file"],
-        .form-group input[type="text"],
-        .form-group input[type="date"],
-        .form-group select {
-            width: 100%;
-            padding: 10px;
-            border: 2px solid #e0e0e0;
-            border-radius: 8px;
-            background: #f8f8f8;
-        }
-        .form-group input[type="file"] {
-            border-style: dashed;
-            cursor: pointer;
-        }
-        .button-group {
-            display: flex;
-            gap: 15px;
-            margin-top: 25px;
-        }
-        button {
-            flex: 1;
-            padding: 15px 25px;
-            border: none;
-            border-radius: 8px;
-            font-size: 1em;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        .btn-primary {
-            background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
-            color: white;
-        }
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 20px rgba(26, 26, 26, 0.4);
-        }
-        .btn-secondary {
-            background: #6c757d;
-            color: white;
-        }
-        .btn-test {
-            background: #333;
-            color: white;
-        }
-        .btn-load {
-            background: #666;
-            color: white;
-        }
-        .btn-manual {
-            background: #1a1a1a;
-            color: white;
-        }
-        .btn-stats {
-            background: #333;
-            color: white;
-        }
-        .btn-warning {
-            background: #999;
-            color: white;
-        }
-        .btn-danger {
-            background: #dc3545;
-            color: white;
-        }
-        .btn-success {
-            background: #28a745;
-            color: white;
-        }
-        .btn-small {
-            padding: 8px 16px;
-            font-size: 0.9em;
-            flex: none;
-        }
         .loading {
             display: none;
             text-align: center;
@@ -442,89 +346,8 @@
             margin: 0 auto;
         }
         @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-        .progress-container {
-            margin-top: 20px;
-            display: none;
-        }
-        .progress-container.active {
-            display: block;
-        }
-        .progress-bar {
-            width: 100%;
-            height: 25px;
-            background: #e0e0e0;
-            border-radius: 12px;
-            overflow: hidden;
-            margin-bottom: 10px;
-        }
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
-            width: 0%;
-            transition: width 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            font-size: 0.9em;
-        }
-        .progress-info {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 10px;
-            font-size: 0.9em;
-            color: #666;
-        }
-        .progress-info div {
-            text-align: center;
-            padding: 5px;
-            background: #f8f8f8;
-            border-radius: 5px;
-        }
-        .batch-info {
-            background: #e9ecef;
-            border: 1px solid #dee2e6;
-            border-radius: 8px;
-            padding: 15px;
-            margin-top: 10px;
-            display: none;
-        }
-        .batch-info.active {
-            display: block;
-        }
-        .batch-info h4 {
-            color: #495057;
-            margin-bottom: 10px;
-        }
-        .batch-stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 10px;
-            margin-top: 10px;
-        }
-        .batch-stat {
-            text-align: center;
-            padding: 8px;
-            background: white;
-            border-radius: 5px;
-            border: 1px solid #e0e0e0;
-        }
-        .batch-stat .number {
-            font-size: 1.2em;
-            font-weight: bold;
-            color: #1a1a1a;
-        }
-        .batch-stat .label {
-            font-size: 0.8em;
-            color: #666;
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
         .charts-section {
             display: grid;
@@ -553,6 +376,7 @@
             display: flex;
             gap: 10px;
             margin-bottom: 20px;
+            flex-wrap: wrap;
         }
         .tab {
             padding: 12px 24px;
@@ -574,7 +398,7 @@
         .tab-content.active {
             display: block;
         }
-        /* ESTILOS PARA CONTROL DE BARBEROS - NUEVO DISEÑO PROFESIONAL */
+        /* ESTILOS PARA CONTROL DE BARBEROS */
         .comandera-section {
             background: white;
             padding: 30px;
@@ -627,7 +451,6 @@
             font-size: 0.9em;
             opacity: 0.9;
         }
-        /* ESTILOS TIPO ORDEN/COMANDA PARA BARBEROS */
         .barberos-grid-control {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
@@ -754,7 +577,6 @@
             background: #fff3cd;
             color: #856404;
         }
-        /* NUEVOS ESTILOS PARA LOS BADGES DE FECHAS CORREGIDOS */
         .cita-proxima {
             background: #cfe2ff;
             color: #052c65;
@@ -868,7 +690,6 @@
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.5);
-            animation: fadeIn 0.3s ease;
         }
         .modal-content {
             background: white;
@@ -878,25 +699,6 @@
             width: 90%;
             max-width: 500px;
             position: relative;
-            animation: slideIn 0.3s ease;
-        }
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-        @keyframes slideIn {
-            from {
-                transform: translateY(-50px);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
         }
         .modal-close {
             position: absolute;
@@ -909,13 +711,11 @@
         .modal-close:hover {
             color: #333;
         }
-        /* MEJORAS ESPECÍFICAS PARA MÓVIL - SOLO TOCO LO NECESARIO PARA EVITAR DESBORDES Y BOTONES SALIDOS */
+        /* MEDIA QUERIES MÓVIL */
         @media (max-width: 768px) {
-            /* Padding general más ajustado para que nada se salga */
             .dashboard-container {
                 padding: 10px;
             }
-            /* Header en columna para que no se desborde */
             .header {
                 flex-direction: column;
                 text-align: center;
@@ -928,58 +728,11 @@
                 justify-content: center;
                 margin-top: 15px;
             }
-            /* Grids principales a una columna */
-            .main-grid,
-            .charts-section,
-            .manual-grid,
-            .chart-grid {
+            .charts-section {
                 grid-template-columns: 1fr;
             }
-            /* Stats y métricas más compactas pero no demasiado pequeñas */
-            .stats-grid,
-            .metrics-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 15px;
-            }
-            /* Categorías más flexibles */
-            .category-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 12px;
-            }
-            /* Botones apilados y al 100% para que no se salgan */
-            .button-group {
-                flex-direction: column;
-                gap: 10px;
-            }
-            button {
-                width: 100%;
-                margin-bottom: 0;
-            }
-            /* Scroll horizontal suave en tablas y contenedores anchos */
-            .table-container,
-            .table-content {
-                overflow-x: auto;
-                -webkit-overflow-scrolling: touch;
-            }
-            table {
-                min-width: 700px; /* permite scroll sin romper layout */
-            }
-            /* Progreso y batch más compactos */
-            .progress-info {
-                grid-template-columns: 1fr;
-                gap: 8px;
-            }
-            .batch-stats {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            /* Filtros apilados */
-            .filters-grid {
-                grid-template-columns: 1fr;
-            }
-            /* Comandera / Control de Barberos */
             .barberos-grid-control {
                 grid-template-columns: 1fr;
-                gap: 20px;
             }
             .comandera-stats {
                 grid-template-columns: repeat(2, 1fr);
@@ -1008,49 +761,50 @@
                 flex: 1;
                 min-width: 120px;
             }
-            /* Evitar desbordes en textos largos */
-            .cita-cliente-nombre,
-            .cita-detalle-item {
-                word-break: break-word;
+            .category-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 12px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- LOGIN CONTAINER -->
+    <!-- LOGIN -->
     <div id="loginContainer" class="login-container">
         <div class="login-card">
             <div class="login-logo">✂️ BARBERÍA ESTILO CLÁSICO</div>
-            <div class="login-subtitle">Dashboard de Gestión y Mensajes</div>
+            <div class="login-subtitle">Dashboard de Gestión y Control</div>
             <div id="loginError" class="login-error"></div>
             <form id="loginForm">
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" required>
                 </div>
                 <div class="form-group">
                     <label for="password">Contraseña:</label>
-                    <input type="password" id="password" name="password" required>
+                    <input type="password" id="password" required>
                 </div>
                 <button type="submit" id="loginBtn" class="login-btn">Iniciar Sesión</button>
             </form>
-            <div class="security-info">✂️ Acceso Seguro - Sistema protegido para BARBERÍA ESTILO CLÁSICO</div>
+            <div class="security-info">✂️ Acceso Seguro - Sistema protegido</div>
         </div>
     </div>
-    <!-- DASHBOARD CONTAINER -->
+
+    <!-- DASHBOARD -->
     <div id="dashboardContainer" class="dashboard-container">
         <div class="header">
             <div>
-                <h1>✂️ Dashboard BARBERÍA ESTILO CLÁSICO <span class="optimization-badge">8 DÍAS + FIX FECHA</span></h1>
-                <p>Sistema de Mensajes Masivos WhatsApp + Control de Barberos - Visualización 8 días futuros • Fix fecha
-                    1899 • Recovery automático</p>
+                <h1>✂️ Dashboard BARBERÍA ESTILO CLÁSICO</h1>
+                <p>Control de Barberos • 8 días futuros • Fix fecha 1899</p>
             </div>
             <div class="user-info">
                 <span id="userEmail" class="user-email"></span>
                 <button id="logoutBtn" class="logout-btn">Cerrar Sesión</button>
             </div>
         </div>
+
         <div id="alert" class="alert"></div>
+
         <div class="stats-grid">
             <div class="stat-card">
                 <div class="stat-number" id="totalCitas">-</div>
@@ -1073,16 +827,19 @@
                 <div class="stat-label">Mensajes Enviados</div>
             </div>
         </div>
-        <!-- Tabs REDUCIDOS -->
+
+        <!-- TABS SIMPLIFICADOS -->
         <div class="tabs">
             <button class="tab" onclick="cambiarTab('categorias')">✂️ Categorías y Barberos</button>
             <button class="tab active" onclick="cambiarTab('comandera')">👨‍💼 Control de Barberos (8 Días)</button>
         </div>
-        <!-- Tab de Categorías (solo panel izquierdo) -->
+
+        <!-- TAB CATEGORÍAS (solo selección) -->
         <div id="tab-categorias" class="tab-content">
             <div class="card">
                 <h2>Distribución de Clientes por Categoría</h2>
                 <div class="category-grid" id="categoryGrid">
+                    <!-- Categorías cargadas dinámicamente (igual que antes) -->
                     <div class="category-item" data-category="TODOS">
                         <div class="category-name">✂️ TODOS</div>
                         <div class="category-count" id="count-todos">-</div>
@@ -1109,27 +866,24 @@
                         <small>5+ citas históricas</small>
                     </div>
                 </div>
-                <!-- SECCIÓN DE BARBEROS -->
+
                 <div id="barberosSection" class="barberos-section">
                     <div class="barberos-title">✂️ Seleccionar Barberos:</div>
-                    <button id="allBarberosBtn" class="all-barberos-btn" onclick="toggleAllBarberos()">✅ TODOS LOS
-                        BARBEROS</button>
-                    <div class="barberos-grid" id="barberosGrid">
-                        <!-- Los barberos se cargarán dinámicamente -->
-                    </div>
+                    <button id="allBarberosBtn" class="all-barberos-btn" onclick="toggleAllBarberos()">✅ TODOS LOS BARBEROS</button>
+                    <div class="barberos-grid" id="barberosGrid"></div>
                     <div class="barberos-info">
-                        ℹ️ <strong>Barberos seleccionados:</strong> <span id="selectedBarberosInfo">Todos los
-                            barberos</span>
+                        ℹ️ <strong>Barberos seleccionados:</strong> <span id="selectedBarberosInfo">Todos los barberos</span>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Tab de Control de Barberos -->
+
+        <!-- TAB CONTROL DE BARBEROS -->
         <div id="tab-comandera" class="tab-content active">
             <div class="comandera-section">
                 <div class="comandera-header">
                     <h2>👨‍💼 CONTROL DE BARBEROS (8 DÍAS)</h2>
-                    <p>Sistema de gestión profesional • Citas confirmadas para los próximos 8 días • Fix fecha 1899</p>
+                    <p>Sistema de gestión profesional • Citas confirmadas para los próximos 8 días</p>
                     <div class="comandera-stats">
                         <div class="comandera-stat">
                             <div class="number" id="comanderaTotalCitas">-</div>
@@ -1151,37 +905,32 @@
                 </div>
                 <div class="control-actions">
                     <button class="btn-primary" onclick="cargarCitasActivas()">🔄 Actualizar Control (8 Días)</button>
-                    <div class="ultima-actualizacion" id="ultimaActualizacion">
-                        Última actualización: -
-                    </div>
+                    <div class="ultima-actualizacion" id="ultimaActualizacion">Última actualización: -</div>
                 </div>
                 <div id="citasActivasContainer">
                     <div class="no-citas-control">
                         <i>👨‍💼</i>
-                        <h3>Sistema de Control Listo (8 Días)</h3>
-                        <p>Haz clic en "Actualizar Control" para cargar las citas de todos los barberos para los
-                            próximos 8 días</p>
+                        <h3>Sistema de Control Listo</h3>
+                        <p>Haz clic en "Actualizar Control" para cargar las citas</p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Sección de Gráficas originales -->
+
+        <!-- GRÁFICAS DE VENTAS (quedan al final) -->
         <div class="charts-section">
             <div class="chart-container">
                 <h3>📊 Ventas por Día de la Semana</h3>
-                <div class="chart-canvas">
-                    <canvas id="chartDias"></canvas>
-                </div>
+                <div class="chart-canvas"><canvas id="chartDias"></canvas></div>
             </div>
             <div class="chart-container">
                 <h3>📈 Tendencia por Meses</h3>
-                <div class="chart-canvas">
-                    <canvas id="chartMeses"></canvas>
-                </div>
+                <div class="chart-canvas"><canvas id="chartMeses"></canvas></div>
             </div>
         </div>
     </div>
-    <!-- Modal para envío de mensaje individual -->
+
+    <!-- MODAL MENSAJE INDIVIDUAL -->
     <div id="modalMensaje" class="modal">
         <div class="modal-content">
             <span class="modal-close" onclick="cerrarModalMensaje()">&times;</span>
@@ -1197,31 +946,27 @@
             </div>
             <div class="form-group">
                 <label>Mensaje personalizado:</label>
-                <textarea id="modalMensajeTexto" rows="4"
-                    placeholder="Hola [nombre], quería confirmar tu cita de hoy..."></textarea>
+                <textarea id="modalMensajeTexto" rows="4"></textarea>
             </div>
             <div class="form-group">
                 <label>URL de Imagen (opcional):</label>
-                <input type="text" id="modalMediaUrl" placeholder="https://ejemplo.com/imagen.jpg">
+                <input type="text" id="modalMediaUrl">
             </div>
             <div style="display: flex; gap: 10px; margin-top: 20px;">
-                <button class="btn-primary" onclick="enviarMensajeIndividual()">📱 Enviar Mensaje</button>
+                <button class="btn-primary" onclick="enviarMensajeIndividual()">📱 Enviar</button>
                 <button class="btn-secondary" onclick="cerrarModalMensaje()">Cancelar</button>
             </div>
         </div>
     </div>
+
     <script>
-        // URL de tu script (ajústala si cambia)
         const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyOIU6m1bZ1okayHKxKlDAZlPTbN9Ajm8vTYwkB-zaVXB7vVwesClbsKVgt_8kRcMIx-A/exec';
+
         let sessionToken = localStorage.getItem('sessionToken');
         let currentUser = null;
-        let selectedCategory = null;
         let dashboardData = null;
         let chartDias = null;
         let chartMeses = null;
-        let destinatariosManual = [];
-        let currentJobId = null;
-        let progressInterval = null;
         let citasActivasData = null;
         let selectedBarberos = [];
         let allBarberos = [];
@@ -1229,35 +974,359 @@
         let modalCitaData = null;
         let autoRefreshInterval = null;
 
-        // ... (todo el JavaScript queda igual, no lo toqué)
+        function showLogin() {
+            document.getElementById('loginContainer').style.display = 'flex';
+            document.getElementById('dashboardContainer').style.display = 'none';
+        }
+        function showDashboard() {
+            document.getElementById('loginContainer').style.display = 'none';
+            document.getElementById('dashboardContainer').style.display = 'block';
+        }
+        function showLoginError(message) {
+            const errorDiv = document.getElementById('loginError');
+            errorDiv.textContent = message;
+            errorDiv.style.display = 'block';
+        }
 
-        // Solo cambié la función cambiarTab para que por default abra comandera
+        async function login(email, password) {
+            try {
+                const loginBtn = document.getElementById('loginBtn');
+                loginBtn.disabled = true;
+                loginBtn.textContent = 'Iniciando sesión...';
+                const formData = new FormData();
+                formData.append('action', 'login');
+                formData.append('email', email);
+                formData.append('password', password);
+                const response = await fetch(SCRIPT_URL, { method: 'POST', body: formData });
+                const result = await response.json();
+                if (result.success) {
+                    sessionToken = result.token;
+                    currentUser = result.user;
+                    localStorage.setItem('sessionToken', sessionToken);
+                    document.getElementById('userEmail').textContent = currentUser.email;
+                    showDashboard();
+                    cargarDatos();
+                    startAutoRefresh();
+                    cambiarTab('comandera'); // abre comandera por default
+                } else {
+                    showLoginError(result.error || 'Error de autenticación');
+                }
+            } catch (error) {
+                showLoginError('Error de conexión o script');
+            } finally {
+                document.getElementById('loginBtn').disabled = false;
+                document.getElementById('loginBtn').textContent = 'Iniciar Sesión';
+            }
+        }
+
+        async function logout() {
+            stopAutoRefresh();
+            localStorage.removeItem('sessionToken');
+            sessionToken = null;
+            showLogin();
+        }
+
+        async function makeAuthenticatedRequest(action, data = {}) {
+            const formData = new FormData();
+            formData.append('action', action);
+            formData.append('token', sessionToken);
+            Object.keys(data).forEach(k => formData.append(k, JSON.stringify(data[k])));
+            const response = await fetch(SCRIPT_URL, { method: 'POST', body: formData });
+            const result = await response.json();
+            if (result.requiresLogin) {
+                logout();
+            }
+            return result;
+        }
+
+        // BARBEROS
+        function updateBarberosDisplay(barberos) {
+            if (!barberos) return;
+            allBarberos = Object.keys(barberos).sort();
+            selectedBarberos = [...allBarberos];
+            allBarberosSelected = true;
+            const grid = document.getElementById('barberosGrid');
+            grid.innerHTML = '';
+            allBarberos.forEach(b => {
+                const el = document.createElement('div');
+                el.className = 'barbero-item selected';
+                el.dataset.barbero = b;
+                el.onclick = () => toggleBarbero(b);
+                el.innerHTML = `<div class="barbero-name">${b}</div><div class="barbero-count">${barberos[b] || 0}</div>`;
+                grid.appendChild(el);
+            });
+            updateSelectedBarberosInfo();
+            updateAllBarberosButton();
+        }
+
+        function toggleBarbero(barbero) {
+            const idx = selectedBarberos.indexOf(barbero);
+            if (idx > -1) {
+                selectedBarberos.splice(idx, 1);
+                document.querySelector(`[data-barbero="${barbero}"]`).classList.remove('selected');
+            } else {
+                selectedBarberos.push(barbero);
+                document.querySelector(`[data-barbero="${barbero}"]`).classList.add('selected');
+            }
+            allBarberosSelected = selectedBarberos.length === allBarberos.length;
+            updateAllBarberosButton();
+            updateSelectedBarberosInfo();
+        }
+
+        function toggleAllBarberos() {
+            allBarberosSelected = !allBarberosSelected;
+            selectedBarberos = allBarberosSelected ? [...allBarberos] : [];
+            document.querySelectorAll('.barbero-item').forEach(item => {
+                item.classList.toggle('selected', allBarberosSelected);
+            });
+            updateAllBarberosButton();
+            updateSelectedBarberosInfo();
+        }
+
+        function updateAllBarberosButton() {
+            const btn = document.getElementById('allBarberosBtn');
+            btn.textContent = allBarberosSelected ? '❌ DESELECCIONAR TODOS' : '✅ SELECCIONAR TODOS';
+            btn.classList.toggle('active', allBarberosSelected);
+        }
+
+        function updateSelectedBarberosInfo() {
+            const info = document.getElementById('selectedBarberosInfo');
+            if (selectedBarberos.length === 0) info.textContent = 'Ningún barbero';
+            else if (allBarberosSelected) info.textContent = 'Todos los barberos';
+            else info.textContent = `${selectedBarberos.length} barberos: ${selectedBarberos.join(', ')}`;
+        }
+
+        // CONTROL DE BARBEROS
+        async function cargarCitasActivas() {
+            document.getElementById('loading').classList.add('active');
+            try {
+                const result = await makeAuthenticatedRequest('loadCitasActivas');
+                if (result.success) {
+                    citasActivasData = result;
+                    document.getElementById('comanderaTotalCitas').textContent = result.resumen.totalCitas || 0;
+                    document.getElementById('comanderaCitasHoy').textContent = result.resumen.citasHoy || 0;
+                    document.getElementById('comanderaCitasMañana').textContent = result.resumen.citasMañana || 0;
+                    document.getElementById('comanderaBarberosActivos').textContent = result.resumen.barberosActivos || 0;
+                    renderizarCitasActivas(result.citasPorBarbero);
+                    document.getElementById('ultimaActualizacion').textContent = `Última: ${new Date().toLocaleTimeString()}`;
+                    showAlert('Control actualizado ✓', 'success');
+                }
+            } catch (e) {
+                showAlert('Error cargando control: ' + e.message, 'error');
+            }
+            document.getElementById('loading').classList.remove('active');
+        }
+
+        function renderizarCitasActivas(citasPorBarbero) {
+            const container = document.getElementById('citasActivasContainer');
+            if (!citasPorBarbero || Object.keys(citasPorBarbero).length === 0) {
+                container.innerHTML = `<div class="no-citas-control"><i>👨‍💼</i><h3>No hay citas</h3><p>No se encontraron citas para los próximos 8 días</p></div>`;
+                return;
+            }
+            let html = '<div class="barberos-grid-control">';
+            Object.keys(citasPorBarbero).forEach(barbero => {
+                const citas = citasPorBarbero[barbero];
+                const hoy = citas.filter(c => c.esHoy).length;
+                const mañana = citas.filter(c => c.esMañana).length;
+                const valorTotal = citas.reduce((s, c) => s + (c.valor || 0), 0);
+                html += `<div class="barbero-orden ${citas.length > 0 ? 'activo' : ''}">
+                    <div class="orden-header">
+                        <div class="orden-title">
+                            <div class="orden-barbero">✂️ ${barbero}</div>
+                            <div class="orden-estado">ACTIVO</div>
+                        </div>
+                        <div class="orden-info">${citas.length} cita${citas.length > 1 ? 's' : ''} • Hoy: ${hoy} • Mañana: ${mañana} • Total: $${valorTotal.toLocaleString()}</div>
+                    </div>
+                    <div class="orden-citas">`;
+                citas.forEach(cita => {
+                    let badgeClass = cita.esHoy ? 'cita-hoy' : cita.esMañana ? 'cita-mañana' : cita.diasHastaCita <= 3 ? 'cita-proxima' : 'cita-futura';
+                    let badgeText = cita.esHoy ? 'HOY' : cita.esMañana ? 'MAÑANA' : cita.diasHastaCita <= 3 ? `EN ${cita.diasHastaCita} DÍAS` : cita.fechaCitaCorta;
+                    const urgente = cita.esHoy && new Date().getHours() > 16;
+                    html += `<div class="cita-orden ${urgente ? 'urgente' : ''}">
+                        <div class="cita-header">
+                            <div>
+                                <div class="cita-cliente-nombre">${cita.cliente}</div>
+                                <div class="cita-detalle-item"><i>📞</i> ${cita.telefono}</div>
+                            </div>
+                            <div style="display:flex;align-items:center;">
+                                <div class="cita-tiempo">${cita.horaCita}</div>
+                                <div class="cita-fecha-badge ${badgeClass}">${badgeText}</div>
+                            </div>
+                        </div>
+                        <div class="cita-detalles">
+                            <div class="cita-detalle-item"><i>✂️</i> <span class="cita-servicio-badge">${cita.servicio}</span> <span class="cita-precio">$${cita.valor?.toLocaleString() || 0}</span></div>
+                            ${cita.email ? `<div class="cita-detalle-item"><i>📧</i> ${cita.email}</div>` : ''}
+                            <div class="cita-detalle-item"><i>📅</i> ${cita.fechaCita}</div>
+                            <div class="cita-detalle-item"><i>🆔</i> Código: ${cita.codigoReserva}</div>
+                        </div>
+                        <div class="cita-acciones">
+                            <button class="btn-accion btn-mensaje" onclick="abrirModalMensaje('${cita.codigoReserva}')">📱 Mensaje</button>
+                            <button class="btn-accion btn-cancelar" onclick="cancelarCita('${cita.codigoReserva}', '${cita.cliente}', ${cita.fila})">❌ Cancelar</button>
+                        </div>
+                    </div>`;
+                });
+                html += `</div></div>`;
+            });
+            html += '</div>';
+            container.innerHTML = html;
+        }
+
+        function abrirModalMensaje(codigo) {
+            const cita = citasActivasData.citasActivas.find(c => c.codigoReserva === codigo);
+            if (!cita) return showAlert('Cita no encontrada', 'error');
+            modalCitaData = cita;
+            let msg = cita.esHoy ? `Hola ${cita.cliente}, confirmas tu cita de HOY a las ${cita.horaCita}? ✂️` :
+                      cita.esMañana ? `Hola ${cita.cliente}, recordatorio cita MAÑANA a las ${cita.horaCita}. ¿Confirmas? ✂️` :
+                      `Hola ${cita.cliente}, recordatorio cita ${cita.fechaCitaCorta} a las ${cita.horaCita}. ¿Confirmas? ✂️`;
+            document.getElementById('modalClienteNombre').value = cita.cliente;
+            document.getElementById('modalClienteTelefono').value = cita.telefono;
+            document.getElementById('modalMensajeTexto').value = msg;
+            document.getElementById('modalMediaUrl').value = '';
+            document.getElementById('modalMensaje').style.display = 'block';
+        }
+
+        function cerrarModalMensaje() {
+            document.getElementById('modalMensaje').style.display = 'none';
+        }
+
+        async function enviarMensajeIndividual() {
+            const msg = document.getElementById('modalMensajeTexto').value.trim();
+            if (!msg) return showAlert('Escribe un mensaje', 'error');
+            try {
+                document.getElementById('loading').classList.add('active');
+                const result = await makeAuthenticatedRequest('enviarMensajeIndividual', {
+                    telefono: modalCitaData.telefono,
+                    mensaje: msg,
+                    mediaUrl: document.getElementById('modalMediaUrl').value.trim(),
+                    clienteNombre: modalCitaData.cliente,
+                    codigoReserva: modalCitaData.codigoReserva
+                });
+                if (result.success) {
+                    showAlert('Mensaje enviado ✓', 'success');
+                    cerrarModalMensaje();
+                }
+            } catch (e) {
+                showAlert('Error enviando: ' + e.message, 'error');
+            }
+            document.getElementById('loading').classList.remove('active');
+        }
+
+        async function cancelarCita(codigo, nombre, fila) {
+            if (!confirm(`¿Cancelar cita de ${nombre}?`)) return;
+            try {
+                document.getElementById('loading').classList.add('active');
+                const result = await makeAuthenticatedRequest('cancelarCita', { fila, codigoReserva: codigo, clienteNombre: nombre });
+                if (result.success) {
+                    showAlert('Cita cancelada ✓', 'success');
+                    cargarCitasActivas();
+                }
+            } catch (e) {
+                showAlert('Error cancelando: ' + e.message, 'error');
+            }
+            document.getElementById('loading').classList.remove('active');
+        }
+
         function cambiarTab(tab) {
             document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
             document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
             event.target.classList.add('active');
             document.getElementById(`tab-${tab}`).classList.add('active');
-            if (tab === 'comandera' && !citasActivasData) {
-                setTimeout(cargarCitasActivas, 500);
-            }
+            if (tab === 'comandera' && !citasActivasData) cargarCitasActivas();
         }
 
-        // Al inicializar, abre comandera por default
-        document.addEventListener('DOMContentLoaded', function () {
-            // ... (el resto igual)
-            if (sessionToken) {
-                // ...
-                showDashboard();
-                cambiarTab('comandera'); // <--- abre comandera al inicio
-                setTimeout(() => {
-                    cargarDatos();
-                    startAutoRefresh();
-                }, 500);
-            }
-            // ...
-        });
+        function showAlert(msg, type = 'success') {
+            const alert = document.getElementById('alert');
+            alert.className = `alert alert-${type} show`;
+            alert.textContent = msg;
+            setTimeout(() => alert.classList.remove('show'), 5000);
+        }
 
-        // El resto del script queda exactamente igual (no lo copio todo para no alargar, pero está intacto)
+        function inicializarGraficas() {
+            chartDias = new Chart(document.getElementById('chartDias'), {
+                type: 'bar',
+                data: { labels: ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'], datasets: [{ data: [0,0,0,0,0,0,0], backgroundColor: '#1a1a1a' }] },
+                options: { responsive: true, maintainAspectRatio: false }
+            });
+            chartMeses = new Chart(document.getElementById('chartMeses'), {
+                type: 'line',
+                data: { labels: [], datasets: [{ data: [], borderColor: '#333', fill: true }] },
+                options: { responsive: true, maintainAspectRatio: false }
+            });
+        }
+
+        async function cargarDatos() {
+            document.getElementById('loading').classList.add('active');
+            try {
+                const result = await makeAuthenticatedRequest('loadData');
+                if (result.success) {
+                    dashboardData = result;
+                    // Stats
+                    document.getElementById('totalCitas').textContent = result.stats.totalCitas || 0;
+                    document.getElementById('totalClientes').textContent = result.stats.totalClientes || 0;
+                    document.getElementById('citasHoy').textContent = result.stats.citasHoy || 0;
+                    document.getElementById('valorPromedio').textContent = '$' + (result.stats.valorPromedio || 0);
+                    document.getElementById('mensajesEnviados').textContent = result.stats.mensajesEnviados || 0;
+                    // Categorías
+                    if (result.categorias) {
+                        Object.keys(result.categorias).forEach(cat => {
+                            const el = document.getElementById(`count-${cat.toLowerCase()}`);
+                            if (el) el.textContent = result.categorias[cat].length;
+                        });
+                    }
+                    // Gráficas
+                    if (result.graficas) {
+                        if (result.graficas.porDiaSemana) {
+                            chartDias.data.datasets[0].data = result.graficas.porDiaSemana.map(d => d.valor);
+                            chartDias.update();
+                        }
+                        if (result.graficas.porMes) {
+                            chartMeses.data.labels = result.graficas.porMes.map(m => m.mes);
+                            chartMeses.data.datasets[0].data = result.graficas.porMes.map(m => m.valor);
+                            chartMeses.update();
+                        }
+                    }
+                    // Barberos
+                    if (result.barberos) updateBarberosDisplay(result.barberos);
+                    showAlert('Datos cargados ✓', 'success');
+                }
+            } catch (e) {
+                showAlert('Error cargando datos: ' + e.message, 'error');
+            }
+            document.getElementById('loading').classList.remove('active');
+        }
+
+        function startAutoRefresh() {
+            if (autoRefreshInterval) clearInterval(autoRefreshInterval);
+            autoRefreshInterval = setInterval(cargarDatos, 30000);
+        }
+
+        function stopAutoRefresh() {
+            if (autoRefreshInterval) clearInterval(autoRefreshInterval);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('loginForm').onsubmit = e => {
+                e.preventDefault();
+                login(document.getElementById('email').value, document.getElementById('password').value);
+            };
+            document.getElementById('logoutBtn').onclick = logout;
+            window.onclick = e => {
+                if (e.target === document.getElementById('modalMensaje')) cerrarModalMensaje();
+            };
+            inicializarGraficas();
+            if (sessionToken) {
+                makeAuthenticatedRequest('test').then(r => {
+                    if (r.success) {
+                        currentUser = r.user;
+                        document.getElementById('userEmail').textContent = currentUser.email;
+                        showDashboard();
+                        cargarDatos();
+                        startAutoRefresh();
+                        cambiarTab('comandera');
+                    } else showLogin();
+                }).catch(() => showLogin());
+            } else showLogin();
+        });
     </script>
 </body>
 </html>
