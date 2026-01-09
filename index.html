@@ -1251,7 +1251,7 @@
             <button class="tab active" onclick="cambiarTab('categorias')">✂️ Envío por Categorías</button>
             <button class="tab" onclick="cambiarTab('comandera')">👨‍💼 Control de Barberos (8 Días)</button>
             <button class="tab" onclick="cambiarTab('manual')">✉️ Envío Manual</button>
-            <!-- ✅ CAMBIO: Se quitó el botón "📊 Estadísticas" para que NO aparezca -->
+            <button class="tab" onclick="cambiarTab('estadisticas')">📊 Estadísticas</button>
         </div>
 
         <!-- Tab de Categorías -->
@@ -1302,8 +1302,7 @@
                     </div>
                 </div>
 
-                <!-- ✅ CAMBIO: Se ocultó SOLO el panel "Envío de Mensajes por Categoría" para que NO aparezca -->
-                <div class="card" style="display:none;">
+                <div class="card">
                     <h2>Envío de Mensajes por Categoría</h2>
                     <div class="form-group">
                         <label>SELECCIONAR CATEGORÍA:</label>
@@ -1513,8 +1512,7 @@ Variable disponible: [nombre]"></textarea>
         </div>
 
         <!-- Tab de Estadísticas -->
-        <!-- ✅ CAMBIO: Se dejó esta sección oculta para que "Estadísticas" NO aparezca nunca -->
-        <div id="tab-estadisticas" class="tab-content" style="display:none;">
+        <div id="tab-estadisticas" class="tab-content">
             <div class="stats-section">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
                     <h2>📊 Estadísticas de Mensajes Masivos</h2>
