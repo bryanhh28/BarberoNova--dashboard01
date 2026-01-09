@@ -1250,7 +1250,6 @@
         <div class="tabs">
             <button class="tab active" onclick="cambiarTab('categorias')">✂️ Envío por Categorías</button>
             <button class="tab" onclick="cambiarTab('comandera')">👨‍💼 Control de Barberos (8 Días)</button>
-            <button class="tab" onclick="cambiarTab('estadisticas')">📊 Estadísticas</button>
         </div>
 
         <!-- Tab de Categorías -->
@@ -1298,92 +1297,6 @@
                             ℹ️ <strong>Barberos seleccionados:</strong> <span id="selectedBarberosInfo">Todos los
                                 barberos</span>
                         </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h2>Envío de Mensajes por Categoría</h2>
-                    <div class="form-group">
-                        <label>SELECCIONAR CATEGORÍA:</label>
-                        <div id="selectedCategory"
-                            style="padding: 10px; background: #f8f8f8; border-radius: 8px; text-align: center; color: #666;">
-                            Selecciona una categoría
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label>PERSONALIZAR MENSAJE:</label>
-                        <textarea id="mensaje" rows="5" placeholder="Hola [nombre], te invitamos a visitarnos en BARBERÍA ESTILO CLÁSICO...
-
-Variables disponibles: [nombre], [citas], [valor]"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label>URL DE IMAGEN (OPCIONAL):</label>
-                        <input type="text" id="mediaUrl" placeholder="https://ejemplo.com/imagen.jpg">
-                    </div>
-
-                    <div class="button-group">
-                        <button class="btn-test" onclick="testConectividad()">⚡ TEST CONECTIVIDAD</button>
-                        <button class="btn-load" onclick="cargarDatos()">✂️ CARGAR DATOS</button>
-                        <button class="btn-primary" onclick="testCompleto()">✅ TEST COMPLETO</button>
-                    </div>
-
-                    <div class="loading" id="loading">
-                        <div class="spinner"></div>
-                        <p>Procesando...</p>
-                    </div>
-
-                    <!-- Área de progreso mejorada -->
-                    <div class="progress-container" id="progressContainer">
-                        <div class="progress-bar">
-                            <div class="progress-fill" id="progressFill">0%</div>
-                        </div>
-                        <div class="progress-info">
-                            <div>
-                                <strong id="progressCurrent">0</strong> / <strong id="progressTotal">0</strong>
-                                <div>Mensajes</div>
-                            </div>
-                            <div>
-                                <strong id="progressSuccess">0</strong>
-                                <div>Exitosos</div>
-                            </div>
-                            <div>
-                                <strong id="progressErrors">0</strong>
-                                <div>Errores</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Información de lotes ULTRA OPTIMIZADA -->
-                    <div class="batch-info" id="batchInfo">
-                        <h4>⚡ Sistema Ultra Optimizado (2 min + Recovery)</h4>
-                        <p>Para grupos grandes (+5 clientes), el sistema enviará automáticamente en lotes de 5 mensajes
-                            cada <strong>2 minutos</strong> (3 segundos entre mensajes) con sistema de recovery
-                            automático para máxima velocidad y confiabilidad.</p>
-                        <div class="batch-stats">
-                            <div class="batch-stat">
-                                <div class="number" id="batchCurrent">-</div>
-                                <div class="label">Lote Actual</div>
-                            </div>
-                            <div class="batch-stat">
-                                <div class="number" id="batchTotal">-</div>
-                                <div class="label">Total Lotes</div>
-                            </div>
-                            <div class="batch-stat">
-                                <div class="number" id="batchEstimated">-</div>
-                                <div class="label">Min Estimados</div>
-                            </div>
-                            <div class="batch-stat">
-                                <div class="number" id="batchStatus">-</div>
-                                <div class="label">Estado</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="button-group" style="margin-top: 20px;">
-                        <button class="btn-primary" onclick="enviarMensajes()" id="btnEnviar">📲 ENVIAR MENSAJES
-                            MASIVOS</button>
-                        <button class="btn-warning" onclick="verificarProgreso()" id="btnVerificar"
-                            style="display: none;">🔄 VERIFICAR PROGRESO</button>
                     </div>
                 </div>
             </div>
@@ -3115,4 +3028,5 @@ Variable disponible: [nombre]"></textarea>
 </body>
 
 </html>
+
 
